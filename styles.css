@@ -1,0 +1,36 @@
+/* Louisiana project */
+
+/* definites */
+
+@font-face {
+  font-family: GothamMedium;
+  src: url(/Gotham-Font/GothamMedium.ttf) format("truetype");
+}
+
+/* global styling */
+
+body {
+  display: grid;
+  font-family: GothamMedium;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: auto;
+  width: 20em;
+}
+
+.top nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2em;
+}
+
+.top ul li {
+  list-style-type: none;
+  padding-right: 3em;
+}
