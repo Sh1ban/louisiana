@@ -12,16 +12,19 @@
 body {
   display: grid;
   font-family: GothamMedium;
+  margin: 0;
+  padding: 0;
 }
 
 .top {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5em;
 }
 
 .logo {
   height: auto;
-  width: 20em;
+  width: 13em;
 }
 
 .top nav ul {
@@ -33,4 +36,159 @@ body {
 .top ul li {
   list-style-type: none;
   padding-right: 3em;
+  font-size: large;
+}
+
+/* The links */
+
+.top a {
+  text-decoration: none;
+}
+
+.top a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s;
+}
+
+.top a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.top a:visited {
+  color: black;
+}
+
+/* header banner whatever */
+
+.banner {
+  display: flex;
+  padding-top: 5em;
+}
+
+.bannerimg {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.container .btn {
+  left: 5em;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.img-overlay .btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 17em;
+}
+
+.headtitle {
+  margin: 0;
+  padding-left: 5em;
+  padding-bottom: 1em;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  color: white;
+  background-color: black;
+  /* position: absolute; */
+  bottom: 0;
+  justify-content: space-between;
+}
+
+footer p {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s;
+}
+
+footer a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+footer a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* events */
+
+.events h1 {
+  margin: 0;
+  padding-left: 5em;
+  padding-bottom: 1em;
+}
+
+.events {
+  margin-top: 4em;
+}
+
+.event {
+  display: flex;
+  justify-content: space-around;
+}
+
+.event img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.event section {
+  margin-left: 4em;
+}
+
+.preview {
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  /* top: 4em; */
+  bottom: 4em;
 }
