@@ -1,0 +1,83 @@
+@font-face {
+    font-family: GothamMedium;
+    src: url(/Gotham-Font/GothamMedium.ttf) format("truetype");
+
+    }
+
+    .body{
+        font-family: GothamMedium;
+    }
+
+.Exhibition-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    }
+
+.LINE {
+color: white;
+background-color: black;
+text-align: center;
+font-size: 150%;
+width: 100%;
+height: 40px;
+
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content > *{
+    flex: 1 1 500px;
+}
+.picture{
+    text-align: center;
+}
+
+.text {
+    background-color: violet;
+}
+.picture{
+    padding-top: 20px;
+    background-color: white
+    
+}
+p { margin-top: -7px; }
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 40px;
+    font-size: 150%;
+}
+.button{
+    background-color: black;
+    color: white;
+    font-size: 100%;
+    border: white;
+    display: inline-block;
+}
+img[src*="/IMG/LouisianaOnline.svg"] {
+    border: none;
+
+}
+img {
+        width: 650px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+      }
+      
+
